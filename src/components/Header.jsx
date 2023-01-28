@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "../assets/logoEB.96f33359 (1).png";
+import Header2 from "../components/Header2";
 const Header = () => {
   return (
     <>
@@ -8,6 +9,7 @@ const Header = () => {
         fluid
         style={{
           backgroundColor: "rgb(12, 3, 56)",
+          color: "white",
         }}
       >
         <Navbar
@@ -41,6 +43,7 @@ const Header = () => {
             </Navbar.Collapse>
           </Container>
         </Navbar>
+        <Header2 />
       </Container>
     </>
   );
