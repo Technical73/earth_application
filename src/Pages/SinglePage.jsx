@@ -1,10 +1,11 @@
 import React from "react";
-import { Header } from "../components";
+import { Header, Iframe } from "../components";
 
 const SinglePage = () => {
   return (
     <>
       <Header />
+      <Iframe />
     </>
   );
 };
