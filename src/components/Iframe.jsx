@@ -7,20 +7,26 @@ const Iframe = () => {
       <Container
         fluid
         style={{
-          backgroundColor: "rgb(11, 0, 39)",
+          backgroundColor: "yellow",
+          paddingTop: "50px",
+          paddingBottom: "50px",
         }}
       >
-        <Container>
+        <Container
+          style={{
+            backgroundColor: "black",
+          }}
+        >
           <Row>
             <Col xs={12} md={12}>
               <h4
                 style={{
                   textAlign: "center",
-                  color: "white",
+
                   fontWeight: "700",
-                  fontSize: "50px",
-                  marginTop: "170px",
-                  marginBottom: "17px",
+                  fontSize: "40px",
+                  marginBottom: "10px",
+
                   color: "orange",
                 }}
               >
@@ -33,10 +39,9 @@ const Iframe = () => {
               <Ratio
                 aspectRatio="16x9"
                 style={{
-                  width: "82%",
+                  width: "90%",
                   margin: "0 auto",
-                  marginTop: "25px",
-                  marginBottom: "100px",
+                  marginBottom: "10px",
                 }}
               >
                 <iframe

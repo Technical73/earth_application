@@ -1,4 +1,4 @@
-export default [
+const FaqData = [
   {
     id: 1,
     question: "Why NFTs for Soil?",
@@ -47,10 +47,5 @@ export default [
     answer:
       "NFT minting currently uses energy. Our project uses a protocol that minimizes energy consumption and we are on a path to becoming carbon-neutral.",
   },
-  {
-    id: 9,
-    question: "What's the Latest with Save Soil? ",
-    answer:
-      "The 100-day journey for Save Soil is in its final phase, with Sadhguru now traversing India. The movement has received the support of 74 nations, many of which are actively taking steps to enact policies that restore and safeguard their agricultural soil. Based on publicly available data, over 2 billion citizens across the world have been touched by the movement across conventional media, press and social media. Organizations supporting the movement include the United Nations Convention to Combat Desertification (UNCCD) & United Nations Environment Programme (UNEP), the World Food Programme, Food & Agriculture Organization. Over 1,000 TV and News reports across 250 media outlets across the world have covered the Save Soil Journey - including Deutsche Welle (DW), Reuters, The Guardian and BBC.",
-  },
 ];
+export default FaqData;

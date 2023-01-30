@@ -17,7 +17,7 @@ const Header = () => {
           className=" bg-transparent"
           variant="dark"
           style={{
-            padding: "16px 10px",
+            padding: "12px 8px",
             fontWeight: "bold",
             color: "white",
           }}

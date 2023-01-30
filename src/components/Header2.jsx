@@ -7,29 +7,29 @@ import banner2 from "../assets/text.dbb951df.png";
 const Header2 = () => {
   return (
     <>
-      <Container
-        style={{
-          backgroundColor: "rgb(12, 3, 56)",
-        }}
-      >
+      <Container>
         <Row>
           <Col>
             <Card
               style={{
                 backgroundColor: "rgb(12, 3, 56)",
-                marginBottom: "152px",
-                marginTop: "110px",
+                width: "100%",
+                margin: "10% 0",
+                border: "none",
               }}
             >
-              <Row spacing={3}>
-                <Col xs={12} md={6}>
+              <Row>
+                <Col xs={12} md={6} className="mb-4">
                   <Card.Img
                     src={`${banner}`}
                     alt="banneroftheimage"
                     variant="top"
+                    style={{
+                      border: "2px solid blue",
+                    }}
                   ></Card.Img>
                 </Col>
-                <Col xs={12} md={6}>
+                <Col xs={12} md={6} className="mb-4">
                   <Card.Img
                     src={`${banner2}`}
                     alt="banneroftheimage2"
@@ -39,13 +39,14 @@ const Header2 = () => {
                     style={{
                       fontSize: "18px",
                       fontWeight: "400",
+                      margin: "0 5px",
                     }}
                   >
                     A FREE NFT COLLECTION TO Save Soil Logo WITH SADHGURU
                   </Card.Text>
                   <Button
                     style={{
-                      marginTop: "70px",
+                      marginTop: "23px",
                     }}
                     variant="outline-info"
                   >

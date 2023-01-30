@@ -19,13 +19,14 @@ const Faqs = () => {
       <Container
         fluid
         style={{
-          backgroundColor: "rgb(11, 0, 39)",
+          backgroundColor: "red",
+          paddingTop: "50px",
+          paddingBottom: "50px",
         }}
       >
         <Container
           style={{
-            backgroundColor: "rgb(8, 2, 44)",
-            padding: "20px 0",
+            backgroundColor: "orange",
           }}
         >
           <Row>
@@ -34,8 +35,7 @@ const Faqs = () => {
               md={12}
               style={{
                 textAlign: "center",
-                marginTop: "100px",
-                marginBottom: "100px",
+
                 fontSize: "serif",
               }}
             >
@@ -56,24 +56,36 @@ const Faqs = () => {
                 return (
                   <>
                     <Card
+                      onClick={() => toggle(items)}
                       key={items.id}
                       style={{
                         backgroundColor: "rgb(11, 0, 39)",
                         color: "white",
-                        padding: "18px 0",
-                        width: "100%",
 
-                        marginBottom: "20px",
+                        cursor: "pointer",
+                        marginBottom: "8px",
                       }}
                     >
                       <Card.Header className="d-flex justify-content-between">
-                        <Card.Text>{items.question}</Card.Text>
+                        <Card.Text
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            margin: "auto 0",
+                          }}
+                        >
+                          {items.question}
+                        </Card.Text>
                         <Button
                           onClick={() => toggle(items)}
                           variant="outline"
                           style={{
                             color: "orange",
                             fontSize: "19px",
+
+                            display: "flex",
+                            alignItems: "center",
+                            margin: "auto 0",
                           }}
                         >
                           {open === items.id ? (
