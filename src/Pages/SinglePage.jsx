@@ -1,6 +1,7 @@
 import React from "react";
 import { Header, Iframe, Faqs } from "../components";
 import { Container } from "react-bootstrap";
+
 const SinglePage = () => {
   return (
     <>
